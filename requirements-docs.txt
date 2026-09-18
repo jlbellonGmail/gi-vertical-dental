@@ -1,2 +1,2 @@
-# Documentación del template; se instala sólo en el workflow Docs.
+# Dependencias de documentación del repositorio; se instalan sólo en el workflow Docs.
 mkdocs-material==9.6.18

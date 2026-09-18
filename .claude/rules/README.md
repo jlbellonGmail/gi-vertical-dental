@@ -1,8 +1,5 @@
 # Reglas modulares
 
-Vacío a propósito. Punto de extensión para instrucciones modulares por
-dominio (accesibilidad, SEO, estilo de contenido, etc.) que agrega cada
-proyecto real que use este template — ver `AGENTS.md`, sección "Reglas
-adicionales". opencode las lee vía el campo `instructions` de
-`opencode.json`; si esta carpeta deja de estar vacía, Codex debe
-referenciarlas desde `.codex/prompts/*.md`.
+Este directorio contiene reglas adicionales del dominio y del producto. Las
+reglas deben ser específicas, verificables y compatibles con `AGENTS.md`.
+La regla vigente del dominio dental está en `vertical-dental.md`.

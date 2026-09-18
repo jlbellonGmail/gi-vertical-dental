@@ -14,7 +14,7 @@ no pertenece a una herramienta concreta.
 - `schemas/*.schema.json`: JSON Schema real (no ornamental) de
   `agents.json`, `models.json` y del manifest de Milestone
   (`work-unit.json`), validado en `tests/test_agentic_schemas.py`.
-- `mcp.json`: fuente canonica de servidores MCP del template. Arranca
+- `mcp.json`: fuente canonica de servidores MCP del circuito de trabajo. Arranca
   vacia a proposito; no se inventan servidores.
 - `run.example.yaml`: declaracion minima previa a `spec.md` para elegir
   modelo, variante y fallback.

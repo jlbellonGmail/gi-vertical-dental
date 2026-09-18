@@ -1,46 +1,36 @@
 # Estado operativo
 
-Versión: v2.0.0  
-Estado general: repositorio vertical dental inicializado desde Template v2.0.0 y limpiado de evidencias históricas de la construcción de la plantilla. Se conserva el circuito operativo, el framework `.audit` normativo, la documentación base, los tests y `runs/.gitkeep`.
+Estado general: GI-Vertical-Dental quedo en su punto inicial propio, limpio de historial y documentacion de producto heredados de la plantilla. El repositorio conserva unicamente el circuito operativo reutilizable, sus pruebas, el framework normativo y la base documental necesaria para construir el dominio dental.
 
-## Próximas fases
+## Alcance inicial
 
-- Definir el alcance funcional de la vertical dental.
-- Declarar sus contratos de dominio y dependencia de `gi-platform-core`.
-- Integrar los módulos resultantes en `gi-clinicadental`, sin duplicar Core ni UI de producto.
-
-Próximo paso exacto: crear la primera unidad funcional dental con evidencia nueva y reglas de dominio explícitas.
+- Proposito y limites del vertical definidos en GOAL.md.
+- Arquitectura alineada con gi-platform-core y gi-clinicadental.
+- Primer trabajo funcional preparado como 01-contrato-vertical-dental en ROADMAP.md.
+- Contrato de integracion documentado en docs/tecnica/contrato-integracion-core.md.
+- Sin UI, marca, landing, public.leads, SMTP, autenticacion propia ni persistencia duplicada en este repositorio.
 
 ## Evidencia real
 
-- Rama local: `chore/limpieza-historial-template`.
-- HEAD local: `b0a83d4` (`chore: remove inherited template history`).
-- Remoto Git: no configurado (`origin` inexistente).
-- Worktrees: 1.
-- Working tree: limpio.
-- Limpieza: 346 archivos históricos eliminados; framework `.audit` y `runs/.gitkeep` conservados.
-- Validación: 31 tests del circuito pasaron usando una carpeta temporal dentro del repositorio. La ejecución sin esa opción fue bloqueada por permisos de la carpeta temporal global de Python.
+- Rama local: chore/limpieza-historial-template.
+- Este estado se actualiza despues del commit de alineacion.
+- Remoto Git: no configurado; no se hizo push.
+- Worktrees: sin unidades de trabajo activas.
+- Limpieza historica: eliminados los artefactos fechados de .audit, runs y la documentacion de fases de la plantilla; se conservaron .audit normativo y runs/.gitkeep.
+- Repositorios externos: gi-platform-core, gi-clinicadental y template solo fueron consultados; no fueron modificados.
 
-## Incidencias
+## Validacion
 
-`scripts/update-status.ps1` falla en este checkout sin remoto con un error de valor NULL; este estado se mantiene actualizado manualmente hasta corregir ese caso en una tarea separada.
+- Suite completa: 257 pasadas, 7 omitidas y 3 fallos heredados del circuito.
+- El caso de destino archivo paso de forma aislada.
+- Dos fallos restantes son ambientales o de fixture: repositorio Git anidado sin permiso de escritura y prueba que ejecuta dentro de un subdirectorio del repositorio principal.
+- git diff --check: correcto.
+- MkDocs no esta disponible en el entorno local; queda para el workflow de documentacion cuando se instalen requirements-docs.txt.
 
-<!-- STATUS:AUTO:BEGIN -->
+## Proximo paso exacto
 
-## Estado verificado automáticamente
+Iniciar 01-contrato-vertical-dental: declarar contratos publicos, permisos con namespace dental, errores estables, integracion de TenantContext/auditoria de Core y pruebas de aislamiento entre organizaciones. No crear todavia pacientes, agenda ni historia clinica.
 
-- Actualizado: 2026-09-18T00:00:00Z
-- Versión: v2.0.0
-- Rama: chore/limpieza-historial-template
-- HEAD: b0a83d4
-- Remoto: UNKNOWN / sin remoto
-- Working tree: clean
-- Worktrees: 1
-- Worktrees Git: 1
-- Unidades activas: ninguna
-- PR activa: UNKNOWN / sin PR abierta
-- CI: UNKNOWN / sin CI verificable
-- CI vigente: UNKNOWN / sin CI verificable
-- Última release: UNKNOWN / no disponible
+## Estado de trabajo
 
-<!-- STATUS:AUTO:END -->
+Este archivo se actualiza antes de cada entrega. La evidencia de verdad sigue siendo el contenido del repositorio, Git y las pruebas ejecutadas.

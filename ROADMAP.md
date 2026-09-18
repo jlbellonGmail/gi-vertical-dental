@@ -1,79 +1,46 @@
-# ROADMAP
+# ROADMAP — GI-VERTICAL-DENTAL
 
-## Cómo usar este archivo
+Este roadmap pertenece exclusivamente al dominio dental. El circuito
+agéntico heredado de la plantilla se usa para trabajar, pero sus fases,
+intervenciones y evidencias históricas no forman parte de este producto.
 
-Este mapa responde qué construimos y qué falta. `[ ]` significa pendiente,
-`[-]` en ejecución o preparada en una PR y `[x]` mergeada y cerrada.
-`Fxx` identifica fases funcionales; `Txx`, intervenciones transversales.
-Una fase sólo pasa a `[x]` después del merge a `develop`.
+Los estados significan: `[ ]` pendiente, `[-]` listo para PR y `[x]`
+completado después del merge a `develop`.
 
-## v2.0.0 — Roadmap activo
+## v0.1.0 — Fundación del vertical
 
-- [x] 06-assess-motor-adaptativo — Fase 01: ASSESS / motor adaptativo.
-- [x] 07-sdd-adaptativo — Fase 02: SDD adaptativo.
-- [x] 08-arquitectura-roles — Fase 03: Arquitectura de roles.
-- [x] 09-convergence — Fase 04: CONVERGENCE.
-- [x] 10-evidencias-adaptativas — Fase 05: contrato adaptativo de evidencias.
-- [x] 11-tests-ci-audit — Fase 06: tests, CI y .audit.
-- [x] 12-agentic-evals — Fase 07: Agentic Evals.
-- [x] 13-routing-dinamico — Fase 08: routing dinámico de modelos.
-- [x] 14-skills-reutilizables — Fase 09: skills reutilizables.
-- [x] 15-mcp-herramientas — Fase 10: MCP y herramientas externas.
-- [x] 16-seguridad-profesional — Fase 11: seguridad profesional.
-- [x] 17-supply-chain-cicd — Fase 12: supply chain y CI/CD profesional.
-- [x] 18-status-observabilidad — Fase 13: STATUS, observabilidad y reentrada.
-- [x] 19-unidades-paralelizacion — Fase 14: unidades y paralelización.
-- [x] 20-releases-evolucion — Fase 15: releases y evolución.
-- [x] 21-validacion-integral-v2 — Fase 16: validación integral v2.
-- [x] 22-auditoria-release-v2 — Fase 17: auditoría y release v2.0.0.
+- [ ] 01-contrato-vertical-dental — Definir propósito, límites, dependencias,
+  contratos públicos, versionado, eventos y ownership de datos.
+- [ ] 02-capacidades-y-permisos-dentales — Definir capacidades namespaced y
+  roles iniciales sobre autorización del Core, sin crear un RBAC paralelo.
+- [ ] 03-integracion-core — Consumir los contratos públicos del Core para
+  identidad, Organization, Site, TenantContext, autorización y auditoría.
+- [ ] 04-configuracion-clinica — Modelar la configuración dental mínima:
+  servicios, especialidades, sedes operativas y reglas de atención.
+- [ ] 05-actores-administrativos — Modelar perfiles administrativos de
+  profesionales y pacientes sin incluir todavía historia clínica.
+- [ ] 06-agenda-y-disponibilidad — Definir disponibilidad, horarios,
+  bloqueos, ausencias y duración como dominio dental reutilizable.
+- [ ] 07-turnos — Implementar reservar, confirmar, reprogramar, cancelar y
+  trazabilidad usando la disponibilidad definida por el vertical.
+- [ ] 08-integracion-clinicadental — Validar que ClínicaDental consume el
+  vertical sin copiar reglas ni acoplar UI, conservando `public.leads`.
 
-## Intervenciones transversales v2.0.0
+## Evolución posterior
 
-- [x] T01-normalizacion-documental — normalización documental entre F02 y F03; PR #33 mergeada contra develop, no es una fase funcional ni consume numeración del roadmap.
-- [x] T02-reconciliar-status-paralelo — reconciliación de STATUS tras la primera oleada paralela; PR #66 mergeada contra develop.
-- [x] T03-reconciliar-status-segunda-oleada — reconciliación de STATUS tras la segunda oleada paralela; PR #70 mergeada contra develop.
-- [x] T04-integridad-sincronizacion — integridad de sincronización y cierre transversal; PR #72 mergeada contra develop.
+- [ ] 09-captacion-y-seguimiento — Convertir consultas en tareas, pacientes
+  o turnos mediante contratos explícitos.
+- [ ] 10-historia-clinica-y-consentimientos — Separar y proteger datos
+  clínicos con permisos profesionales y auditoría reforzada.
+- [ ] 11-odontograma-y-tratamientos — Agregar odontograma, planes,
+  tratamientos y evolución versionada.
+- [ ] 12-documentos-clinicos — Gestionar adjuntos y documentos con acceso
+  temporal, retención y trazabilidad.
 
-## Histórico
+## Reglas del roadmap
 
-### v1.1.0
-
-Las unidades históricas se conservan en [runs/v1.1.0](runs/v1.1.0/), sin
-alterar tags, commits ni la release congelada.
-
-- [x] 00-fuente-unica-router-modelos
-- [x] 01-code-reviewer-y-sdd
-- [x] 02-integridad-post-hitl-y-ready-for-pr
-- [x] 03-adopcion-proyecto-existente
-- [x] 04-ci-wiring-product-tests
-- [x] 05-operational-readiness-docs
-
-## Fuentes de orientación
-
-- [CONSTITUTION](CONSTITUTION.md) — principios permanentes.
-- [AGENTS](AGENTS.md) — operación del circuito.
-- [STATUS](STATUS.md) — estado actual para reentrada.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- No se marca un item como `[x]` antes de su merge.
+- Cada item debe declarar su contrato con Core y su impacto en ClínicaDental.
+- La vertical no incorpora UI de producto ni infraestructura de Supabase por
+  cuenta propia; la aplicación anfitriona proporciona esos adaptadores.
+- Las carencias genéricas se corrigen en `gi-platform-core`, no aquí.

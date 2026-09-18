@@ -46,9 +46,9 @@ jobs:
       # ############################################################
       # PLACEHOLDER: build/test del stack de producto.
       #
-      # Este template no tiene stack de producto propio todavia (ver
-      # seccion "Stack" en AGENTS.md). Cuando el proyecto real que nazca
-      # de este template defina su stack (frontend, backend, etc.):
+      # Este vertical todavía no tiene runtime de producto propio (ver
+      # seccion "Stack" en AGENTS.md). Cuando el vertical defina
+      # el vertical defina su runtime (paquete, API o adaptador):
       #
       #   1. Documentar esa decision primero en
       #      docs/tecnica/arquitectura.md.
@@ -66,7 +66,7 @@ jobs:
 
       - name: Placeholder (sin stack definido)
         run: |
-          echo "product-tests: sin stack de producto definido todavia. Ver docs/tecnica/arquitectura.md."
+          echo "product-tests: el dominio todavía no tiene runtime ejecutable; se validan contratos y circuito. Ver docs/tecnica/arquitectura.md."
 
   # Gate obligatorio igual que circuit-tests y product-tests (ver AGENTS.md,
   # seccion "CI/CD"): corre tests/test_local_reconciler_scripts.py, que el
