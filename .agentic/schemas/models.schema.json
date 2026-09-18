@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://template.local/agentic/schemas/models.schema.json",
+  "$id": "https://gi-vertical-dental.local/agentic/schemas/models.schema.json",
   "title": "models.json schema",
   "description": "Describe la forma real de .agentic/models.json: router minimo de modelos OpenCode, allowlists, variantes validas, proveedores y fallbacks por rol.",
   "type": "object",

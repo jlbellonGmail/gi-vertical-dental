@@ -13,7 +13,7 @@ import re
 from pathlib import Path
 
 
-# Project root is the template repo root
+# Project root is the GI-Vertical-Dental repo root
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 

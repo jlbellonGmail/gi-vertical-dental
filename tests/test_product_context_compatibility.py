@@ -3,7 +3,7 @@
 - Un bloque `Referencias:` opcional debajo de un item de ROADMAP.md no
   debe alterar la deteccion de estado (`Pending`/`Ready`/`Done`).
 - La ausencia de `docs/producto/contexto-producto.md` no debe romper
-  `Assert-FeatureContract` (repos legacy o este mismo template).
+  `Assert-FeatureContract` (repos legacy o este mismo repositorio).
 """
 
 import os

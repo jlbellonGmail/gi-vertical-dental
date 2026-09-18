@@ -13,22 +13,22 @@ def read_audit(name: str) -> str:
     return content
 
 
-def test_audit_has_one_active_template_profile():
-    template = read_audit("profiles/TEMPLATE.md")
+def test_audit_has_one_active_vertical_profile():
+    template = read_audit("profiles/VERTICAL-DENTAL.md")
     assert "**Estado:** Activo" in template
     assert "QUALITY_SCORE.md" in template
     assert "AUDIT_RULES.md" in template
 
     other_profiles = [
         path for path in (AUDIT / "profiles").glob("*.md")
-        if path.name != "TEMPLATE.md"
+        if path.name != "VERTICAL-DENTAL.md"
     ]
     assert other_profiles, "El framework debe conservar perfiles alternativos separados"
     assert all(
         "Estado: NO IMPLEMENTADO" in path.read_text(encoding="utf-8")
         or path.name in {"APPLICATION.md", "LIBRARY.md"}
         for path in other_profiles
-    ), "El perfil TEMPLATE no debe incorporar requisitos de perfiles alternativos"
+    ), "El perfil VERTICAL-DENTAL no debe incorporar requisitos de perfiles alternativos"
 
 
 def test_audit_prompt_preserves_independent_normative_order():
@@ -37,11 +37,11 @@ def test_audit_prompt_preserves_independent_normative_order():
         ".audit/README.md",
         ".audit/QUALITY_SCORE.md",
         ".audit/AUDIT_RULES.md",
-        ".audit/profiles/TEMPLATE.md",
+        ".audit/profiles/VERTICAL-DENTAL.md",
     ]
     positions = [prompt.index(item) for item in required]
     assert positions == sorted(positions), "AUDIT_PROMPT debe imponer el orden normativo"
-    assert "PERFIL = TEMPLATE" in prompt
+    assert "PERFIL = VERTICAL-DENTAL" in prompt
     assert "exactamente un perfil" in prompt.lower()
 
 

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://template.local/agentic/schemas/agents.schema.json",
+  "$id": "https://gi-vertical-dental.local/agentic/schemas/agents.schema.json",
   "title": "agents.json schema",
 "description": "Describe roles canonicos por capacidades y sus adaptadores de ejecucion.",
   "type": "object",

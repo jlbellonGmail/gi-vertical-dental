@@ -485,7 +485,7 @@ sólo puede utilizarse cuando se cumplen todas las condiciones definidas por:
 ```text
 QUALITY_SCORE.md
 AUDIT_RULES.md
-profiles/TEMPLATE.md
+profiles/VERTICAL-DENTAL.md
 ```
 
 No representa una certificación oficial externa.

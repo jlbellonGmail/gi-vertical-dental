@@ -170,7 +170,7 @@ define cómo deben interpretarse para una determinada clase de proyecto.
 Ejemplo:
 
 ```text
-profiles/TEMPLATE.md
+profiles/VERTICAL-DENTAL.md
 profiles/APPLICATION.md
 profiles/LIBRARY.md
 ```

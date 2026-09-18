@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://template.local/agentic/schemas/work-unit.schema.json",
+  "$id": "https://gi-vertical-dental.local/agentic/schemas/work-unit.schema.json",
   "title": "work-unit.json manifest schema",
   "description": "Describe la forma fija del manifest de Milestone documentada en scripts/workunit-lib.ps1 (Read-WorkUnitManifest / Write-WorkUnitManifest).",
   "type": "object",

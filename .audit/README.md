@@ -62,7 +62,7 @@ La estructura base del framework es:
 ├── AUDIT_PROMPT.md
 │
 ├── profiles/
-│   ├── TEMPLATE.md
+│   ├── VERTICAL-DENTAL.md
 │   ├── APPLICATION.md
 │   └── LIBRARY.md
 │
@@ -133,7 +133,7 @@ Contiene la interpretación del estándar según el tipo de proyecto.
 Ejemplos:
 
 ```text
-profiles/TEMPLATE.md
+profiles/VERTICAL-DENTAL.md
 profiles/APPLICATION.md
 profiles/LIBRARY.md
 ```
@@ -316,7 +316,7 @@ Tampoco puede introducir requisitos, penalizaciones o recomendaciones en la audi
 Para repositorios cuyo propósito principal sea servir como base reutilizable debe utilizarse:
 
 ```text
-.audit/profiles/TEMPLATE.md
+.audit/profiles/VERTICAL-DENTAL.md
 ```
 
 Este perfil evalúa especialmente:
@@ -428,7 +428,7 @@ Framework:
 .audit/
 
 Perfil:
-.audit/profiles/TEMPLATE.md
+.audit/profiles/VERTICAL-DENTAL.md
 
 No modifiques el proyecto.
 Genera evidencia e informe según las reglas del framework.
@@ -1144,7 +1144,7 @@ Componentes fundamentales:
 [x] README.md
 [x] QUALITY_SCORE.md
 [x] AUDIT_RULES.md
-[x] profiles/TEMPLATE.md
+[x] profiles/VERTICAL-DENTAL.md
 [x] AUDIT_PROMPT.md
 [x] evidence/README.md
 [x] reports/README.md

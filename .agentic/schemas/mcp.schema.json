@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://template.invalid/schemas/mcp.schema.json",
+  "$id": "https://gi-vertical-dental.local/agentic/schemas/mcp.schema.json",
   "title": "Declarative external capability catalog",
   "type": "object",
   "additionalProperties": false,

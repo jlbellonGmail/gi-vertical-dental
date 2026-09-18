@@ -12,6 +12,6 @@ Mientras su estado sea `NO IMPLEMENTADO`:
 * no modifica `AUDIT_RULES.md`;
 * no modifica el perfil activo.
 
-Para auditorías `TEMPLATE`, este archivo debe ignorarse completamente.
+Para auditorías de otro perfil activo, este archivo debe ignorarse completamente.
 
 Su contenido se definirá y versionará antes de realizar la primera auditoría de tipo `LIBRARY`.

@@ -60,13 +60,13 @@ Antes de analizar el proyecto debes leer completamente, en este orden:
 1. .audit/README.md
 2. .audit/QUALITY_SCORE.md
 3. .audit/AUDIT_RULES.md
-4. .audit/profiles/TEMPLATE.md
+4. .audit/profiles/VERTICAL-DENTAL.md
 ```
 
 Para esta auditoría utiliza:
 
 ```text
-PERFIL = TEMPLATE
+PERFIL = VERTICAL-DENTAL
 ```
 
 Debes cargar **exactamente un perfil**.
@@ -74,7 +74,7 @@ Debes cargar **exactamente un perfil**.
 Para esta auditoría:
 
 ```text
-ACTIVO: .audit/profiles/TEMPLATE.md
+ACTIVO: .audit/profiles/VERTICAL-DENTAL.md
 IGNORAR: cualquier otro archivo de .audit/profiles/
 ```
 
@@ -414,12 +414,12 @@ N/A
 
 ---
 
-# 15. Auditoría TEMPLATE
+# 15. Auditoría VERTICAL-DENTAL
 
 Aplica completamente:
 
 ```text
-.audit/profiles/TEMPLATE.md
+.audit/profiles/VERTICAL-DENTAL.md
 ```
 
 Debes investigar especialmente:

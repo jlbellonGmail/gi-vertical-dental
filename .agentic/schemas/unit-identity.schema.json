@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://template.local/agentic/schemas/unit-identity.schema.json",
+  "$id": "https://gi-vertical-dental.local/agentic/schemas/unit-identity.schema.json",
   "title": "Canonical work unit identity",
   "type": "object",
   "required": ["schemaVersion","version","mode","unitId","canonicalSlug","branch","worktree","runPath","baseCommit","currentHead"],
