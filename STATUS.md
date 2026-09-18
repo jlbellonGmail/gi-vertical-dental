@@ -34,23 +34,3 @@ Iniciar 01-contrato-vertical-dental: declarar contratos publicos, permisos con n
 ## Estado de trabajo
 
 Este archivo se actualiza antes de cada entrega. La evidencia de verdad sigue siendo el contenido del repositorio, Git y las pruebas ejecutadas.
-
-<!-- STATUS:AUTO:BEGIN -->
-
-## Estado verificado automáticamente
-
-- Actualizado: 2026-09-18T13:04:05Z
-- Versión: v2.0.0
-- Rama: chore/limpieza-historial-template
-- HEAD: 750a3e3aec7ac7aad94a8315339df9f6658f763e
-- Remoto: UNKNOWN / sin remoto
-- Working tree: dirty
-- Worktrees: 3
-- Worktrees Git: 3
-- Unidades activas: ninguna
-- PR activa: UNKNOWN / sin PR abierta
-- CI: UNKNOWN / sin CI verificable
-- CI vigente: UNKNOWN / sin CI verificable
-- Última release: UNKNOWN / no disponible
-
-<!-- STATUS:AUTO:END -->
