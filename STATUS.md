@@ -14,7 +14,8 @@ Estado general: GI-Vertical-Dental quedo en su punto inicial propio, limpio de h
 
 - Rama local: codex/vertical-dental-baseline.
 - HEAD local: commit de baseline vigente, verificado por Git.
-- Remoto Git: no configurado; no se hizo push.
+- Remoto Git: `origin` configurado a
+  `https://github.com/jlbellonGmail/gi-vertical-dental.git`; no se hizo push.
 - Worktrees: sin unidades de trabajo activas.
 - Limpieza historica: eliminados los artefactos fechados de .audit, runs y la documentacion de fases de la plantilla; se conservaron .audit normativo y runs/.gitkeep.
 - Repositorios externos: gi-platform-core, gi-clinicadental y template solo fueron consultados; no fueron modificados.
