@@ -12,7 +12,7 @@ Estado general: GI-Vertical-Dental quedo en su punto inicial propio, limpio de h
 
 ## Evidencia real
 
-- Rama local: chore/limpieza-historial-template.
+- Rama local: codex/vertical-dental-baseline.
 - HEAD local: commit de baseline vigente, verificado por Git.
 - Remoto Git: no configurado; no se hizo push.
 - Worktrees: sin unidades de trabajo activas.
