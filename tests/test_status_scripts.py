@@ -77,4 +77,4 @@ def test_no_gh_is_warning(tmp_path):
     assert "WARNING" in result.stdout
 
 def test_execution_error_is_exit_two(tmp_path):
-    assert run(UPDATE, tmp_path).returncode == 2
+    assert run(UPDATE, tmp_path, "-RepositoryRoot", str(tmp_path)).returncode == 2

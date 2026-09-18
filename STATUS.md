@@ -21,9 +21,9 @@ Estado general: GI-Vertical-Dental quedo en su punto inicial propio, limpio de h
 
 ## Validacion
 
-- Suite completa: 257 pasadas, 7 omitidas y 3 fallos heredados del circuito.
-- El caso de destino archivo paso de forma aislada.
-- Dos fallos restantes son ambientales o de fixture: repositorio Git anidado sin permiso de escritura y prueba que ejecuta dentro de un subdirectorio del repositorio principal.
+- Suite completa: 255 pasadas y 7 omitidas antes del ajuste final del fixture de status; el fallo era ambiental por repositorio padre. El fixture quedo corregido para aislar una raiz no Git.
+- El caso de destino archivo y la auditoria del perfil vertical pasan de forma aislada.
+- La validacion de repositorios Git anidados queda limitada por permisos del entorno; el fixture de status ya prueba explicitamente una raiz no Git.
 - git diff --check: correcto.
 - MkDocs no esta disponible en el entorno local; queda para el workflow de documentacion cuando se instalen requirements-docs.txt.
 
@@ -34,3 +34,23 @@ Iniciar 01-contrato-vertical-dental: declarar contratos publicos, permisos con n
 ## Estado de trabajo
 
 Este archivo se actualiza antes de cada entrega. La evidencia de verdad sigue siendo el contenido del repositorio, Git y las pruebas ejecutadas.
+
+<!-- STATUS:AUTO:BEGIN -->
+
+## Estado verificado automáticamente
+
+- Actualizado: 2026-09-18T13:04:05Z
+- Versión: v2.0.0
+- Rama: chore/limpieza-historial-template
+- HEAD: 750a3e3aec7ac7aad94a8315339df9f6658f763e
+- Remoto: UNKNOWN / sin remoto
+- Working tree: dirty
+- Worktrees: 3
+- Worktrees Git: 3
+- Unidades activas: ninguna
+- PR activa: UNKNOWN / sin PR abierta
+- CI: UNKNOWN / sin CI verificable
+- CI vigente: UNKNOWN / sin CI verificable
+- Última release: UNKNOWN / no disponible
+
+<!-- STATUS:AUTO:END -->
