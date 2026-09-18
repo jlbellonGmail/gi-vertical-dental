@@ -1,34 +1,29 @@
 # Estado operativo
 
 Versión: v2.0.0  
-Estado general: repositorio local inicializado desde el template v2.0.0 en
-`develop`. No hay remoto configurado y la copia de trabajo no está limpia:
-Git registra 357 eliminaciones pendientes, principalmente evidencia histórica
-en `.audit/` y `runs/`.
+Estado general: repositorio vertical dental inicializado desde Template v2.0.0 y limpiado de evidencias históricas de la construcción de la plantilla. Se conserva el circuito operativo, el framework `.audit` normativo, la documentación base, los tests y `runs/.gitkeep`.
 
 ## Próximas fases
 
-- Reconciliar el estado local antes de iniciar una integración funcional.
-- Decidir si las eliminaciones históricas son limpieza intencional o deben
-  restaurarse desde `HEAD`.
+- Definir el alcance funcional de la vertical dental.
+- Declarar sus contratos de dominio y dependencia de `gi-platform-core`.
+- Integrar los módulos resultantes en `gi-clinicadental`, sin duplicar Core ni UI de producto.
 
-Próximo paso exacto: dejar el árbol de trabajo en un estado explícito
-(commit de limpieza o restauración de archivos) y recién después arrancar la
-revisión/integración de `gi-vertical-dental` con el core persistente.
+Próximo paso exacto: crear la primera unidad funcional dental con evidencia nueva y reglas de dominio explícitas.
 
 ## Evidencia real
 
-- Rama local: `develop`.
-- HEAD local: `1b49f32bd9197e31a7b73588a65a6e9f3faab26e`.
+- Rama local: `chore/limpieza-historial-template`.
+- HEAD local: `b0a83d4` (`chore: remove inherited template history`).
 - Remoto Git: no configurado (`origin` inexistente).
 - Worktrees: 1.
-- Cambios pendientes: 357 eliminaciones versionadas.
+- Working tree: limpio.
+- Limpieza: 346 archivos históricos eliminados; framework `.audit` y `runs/.gitkeep` conservados.
+- Validación: 31 tests del circuito pasaron usando una carpeta temporal dentro del repositorio. La ejecución sin esa opción fue bloqueada por permisos de la carpeta temporal global de Python.
 
 ## Incidencias
 
-`scripts/update-status.ps1` falló localmente con
-`No se puede llamar a un método en una expresión con valor NULL`; el bloque
-automático queda corregido manualmente hasta revisar ese caso.
+`scripts/update-status.ps1` falla en este checkout sin remoto con un error de valor NULL; este estado se mantiene actualizado manualmente hasta corregir ese caso en una tarea separada.
 
 <!-- STATUS:AUTO:BEGIN -->
 
@@ -36,10 +31,10 @@ automático queda corregido manualmente hasta revisar ese caso.
 
 - Actualizado: 2026-09-18T00:00:00Z
 - Versión: v2.0.0
-- Rama: develop
-- HEAD: 1b49f32bd9197e31a7b73588a65a6e9f3faab26e
+- Rama: chore/limpieza-historial-template
+- HEAD: b0a83d4
 - Remoto: UNKNOWN / sin remoto
-- Working tree: dirty
+- Working tree: clean
 - Worktrees: 1
 - Worktrees Git: 1
 - Unidades activas: ninguna
