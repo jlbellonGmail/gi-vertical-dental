@@ -35,3 +35,11 @@ Iniciar 01-contrato-vertical-dental: declarar contratos publicos, permisos con n
 ## Estado de trabajo
 
 Este archivo se actualiza antes de cada entrega. La evidencia de verdad sigue siendo el contenido del repositorio, Git y las pruebas ejecutadas.
+
+<!-- STATUS:AUTO:BEGIN -->
+## Estado verificado automaticamente
+
+- Rama: codex/vertical-dental-baseline
+- HEAD: d0db39eb7bd9bc1fe942aa592dae8ff16f7b5a64
+- Plataforma: ai-native v3.1.1
+<!-- STATUS:AUTO:END -->
